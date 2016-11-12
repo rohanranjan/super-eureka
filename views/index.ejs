@@ -1,0 +1,36 @@
+<% layout('layout') -%>
+
+<div class="title">  
+    <%= title %>
+</div> 
+
+<style>
+.login-box{width:450px; background:#fff; border:1px solid #ddd; margin:100px auto; padding:10px; display:block;}
+.form-group-login{margin-bottom:10px;}
+.input-box{width:100%; padding:6px 10px; border:1px solid #ddd;}
+.login-submit{margin:0 auto; text-align:center; background:#222; color:#eee; border:none; padding:5px 20px;}
+</style>
+
+<div class="login-box">
+<form role='form' class="login-form" method="post" enctype="multipart/form-data" action="/uploadimage">
+<div class="form-group-login">
+<input type="text" class="input-box" name="username" value="" placeholder="Name">
+</div>
+<div class="form-group-login">
+<input type="password" class="input-box" name="userpassword" value="" placeholder="Password">
+</div>
+<div class="form-group-login">
+<input type="file" id="upload-input" class="input-box" value="" name="image" >
+</div>
+
+<div class="form-group-login">
+<input type="submit" class="login-submit" value="Submit">
+</div>
+</form>
+
+<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<!--<script src="javascripts/imageupload.js"></script>-->
+</div>
+
+
